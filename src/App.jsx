@@ -1363,23 +1363,46 @@ const Portfolio = () => {
   );
 
   const GlassCard = ({ children, className = "", glowColor = "red", onClick, cardId }) => {
-    const isTouched = touchedCards.has(cardId);
+    const [isActive, setIsActive] = useState(false);
+    
+    const handleInteraction = (e) => {
+      if (onClick) {
+        onClick(e);
+      }
+      
+      // Toggle active state for visual feedback
+      setIsActive(prev => !prev);
+      
+      // Reset after animation
+      setTimeout(() => setIsActive(false), 300);
+    };
+
+    const handleTouchStart = (e) => {
+      e.preventDefault(); // Prevent default touch behavior
+      setIsActive(true);
+    };
+
+    const handleTouchEnd = (e) => {
+      e.preventDefault();
+      handleInteraction(e);
+    };
     
     return (
       <div 
-        className={`relative group backdrop-blur-xl bg-black/20 border border-white/10 rounded-3xl p-8 shadow-2xl transition-all duration-500 overflow-hidden ${className}
+        className={`relative group backdrop-blur-xl bg-black/20 border border-white/10 rounded-3xl p-8 shadow-2xl transition-all transform duration-500 overflow-hidden ${className}
           ${onClick ? 'cursor-pointer' : ''}
-          ${isTouched ? 'bg-black/30 scale-105' : ''}
+          ${isActive ? 'bg-black/30 scale-105' : ''}
           hover:bg-black/30 hover:scale-105 active:bg-black/30 active:scale-105 touch-manipulation`}
         style={{
           boxShadow: `0 8px 32px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1)`,
         }}
-        onClick={onClick}
-        onTouchStart={() => cardId && handleCardTouch(cardId)}
+        onClick={handleInteraction}
+        onTouchStart={handleTouchStart}
+        onTouchEnd={handleTouchEnd}
       >
         <div 
           className={`absolute inset-0 rounded-3xl transition-opacity duration-500 blur-xl
-            ${isTouched ? 'opacity-20' : 'opacity-0 group-hover:opacity-20 group-active:opacity-20'}`}
+            ${isActive ? 'opacity-20' : 'opacity-0 group-hover:opacity-20 group-active:opacity-20'}`}
           style={{
             background: glowColor === 'red' 
               ? 'linear-gradient(45deg, #ff0040, #ff6b9d)' 
@@ -1388,16 +1411,16 @@ const Portfolio = () => {
               : 'linear-gradient(45deg, #ffd700, #ffed4e)',
           }}
         />
-        <div className={`absolute top-6 right-4 text-blue/50 font-Shadows text-lg italic transition-opacity duration-500
-          ${isTouched ? 'opacity-100' : 'opacity-0 group-hover:opacity-100 group-active:opacity-100'}`}>
+        <div className={`absolute top-6 right-4 text-blue-400/70 font-Shadows text-lg italic transition-opacity duration-500
+          ${isActive ? 'opacity-100' : 'opacity-0 group-hover:opacity-100 group-active:opacity-100'}`}>
           Thwip!
         </div>
         <div className={`absolute bottom-4 left-4 text-yellow-400 font-Shadows text-sm italic transition-opacity duration-500
-          ${isTouched ? 'opacity-100' : 'opacity-0 group-hover:opacity-100 group-active:opacity-100'}`}>
+          ${isActive ? 'opacity-100' : 'opacity-0 group-hover:opacity-100 group-active:opacity-100'}`}>
           Zap!
         </div>
         <div className={`absolute bottom-2 right-8 text-pink-400 font-Shadows text-sm italic transition-opacity duration-500
-          ${isTouched ? 'opacity-100' : 'opacity-0 group-hover:opacity-100 group-active:opacity-100'}`}>
+          ${isActive ? 'opacity-100' : 'opacity-0 group-hover:opacity-100 group-active:opacity-100'}`}>
           Bam!
         </div>
         <div className="relative z-10">
