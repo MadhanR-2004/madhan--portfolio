@@ -128,16 +128,16 @@
 //           }}
 //         />
 //       )} */}
-//       <div className="absolute top-4 right-4 text-white/50 font-playfair text-lg italic opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+//       <div className="absolute top-4 right-4 text-white/50 font-oswald text-lg italic opacity-0 group-hover:opacity-100 transition-opacity duration-500">
 //         Web-Stuck!
 //       </div>
-//       <div className="absolute bottom-4 left-4 text-yellow-400 font-playfair text-sm italic opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+//       <div className="absolute bottom-4 left-4 text-yellow-400 font-oswald text-sm italic opacity-0 group-hover:opacity-100 transition-opacity duration-500">
 //         Thwip!
 //       </div>
-//       {/* <div className="absolute top-12 left-8 text-green-400 font-playfair text-sm italic opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+//       {/* <div className="absolute top-12 left-8 text-green-400 font-oswald text-sm italic opacity-0 group-hover:opacity-100 transition-opacity duration-500">
 //         Pow!
 //       </div> */}
-//       <div className="absolute bottom-12 right-8 text-pink-400 font-playfair text-sm italic opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+//       <div className="absolute bottom-12 right-8 text-pink-400 font-oswald text-sm italic opacity-0 group-hover:opacity-100 transition-opacity duration-500">
 //         Bam!
 //       </div>
 //       <div className="relative z-10">
@@ -294,7 +294,7 @@
 //               MADHAN R
 //             </text>
 //           </div>
-//           <p className="text-gray-300 leading-relaxed font-medium group-hover:text-white transition-colors duration-300 font-playfair">
+//           <p className="text-gray-300 leading-relaxed font-medium group-hover:text-white transition-colors duration-300 font-oswald">
 //             An enthusiastic B.Tech student specializing in AI and Data Science, proficient in Python, JavaScript and its frameworks. Successfully completed AI-driven projects. Demonstrated leadership by organizing impactful tech
 //             events within the college community.
 //           </p>
@@ -342,16 +342,16 @@
 //               <div className="space-y-6">
 //                 <div>
 //                   <h4 className="font-black text-xl tracking-wide font-unbounded">B.TECH (AI&DS)</h4>
-//                   <p className="text-gray-300 font-semibold font-playfair">Sona College of Technology</p>
-//                   <p className="text-gray-400 font-medium font-playfair italic">2022 - 2026 | GPA: 8.72/10</p>
+//                   <p className="text-gray-300 font-semibold font-oswald">Sona College of Technology</p>
+//                   <p className="text-gray-400 font-medium font-oswald italic">2022 - 2026 | GPA: 8.72/10</p>
 //                 </div>
 //                 <div >
 //                   <h4 className="font-black text-lg tracking-wide font-unbounded">HSC - 89%</h4>
-//                   <p className="text-gray-300 font-playfair">Vidhyalakshmi Matric Higher Secondary School</p>
+//                   <p className="text-gray-300 font-oswald">Vidhyalakshmi Matric Higher Secondary School</p>
 //                 </div>
 //                 <div >
 //                   <h4 className="font-black text-lg tracking-wide font-unbounded">SSLC - 99%</h4>
-//                   <p className="text-gray-300 font-playfair">Ambalal Jain Saraswathi Matriculation Vidyalaya</p>
+//                   <p className="text-gray-300 font-oswald">Ambalal Jain Saraswathi Matriculation Vidyalaya</p>
 //                 </div>
 //               </div>
 //             </GlassCard>
@@ -363,7 +363,7 @@
 //                 {skills.map((skill, index) => (
 //                   <span 
 //                     key={index}
-//                     className="px-4 py-2 bg-gradient-to-r from-red-500/20 to-blue-500/20 border border-white/30 rounded-full text-xl tracking-wide hover:scale-110 hover:bg-white/10 transition-all duration-300 cursor-pointer font-playfair"
+//                     className="px-4 py-2 bg-gradient-to-r from-red-500/20 to-blue-500/20 border border-white/30 rounded-full text-xl tracking-wide hover:scale-110 hover:bg-white/10 transition-all duration-300 cursor-pointer font-oswald"
 //                   >
 //                     <text>{skill}</text>
 //                   </span>
@@ -395,7 +395,7 @@
 //                   <div className={`inline-block px-4 py-2 rounded-full font-bold text-sm tracking-wide bg-gradient-to-r ${project.gradient} text-white mb-6 font-unbounded`}>
 //                     {project.tech}
 //                   </div>
-//                   <p className="text-gray-300 leading-relaxed font-medium group-hover:text-white transition-colors duration-300 font-playfair">
+//                   <p className="text-gray-300 leading-relaxed font-medium group-hover:text-white transition-colors duration-300 font-oswald">
 //                     {project.description}
 //                   </p>
 //                 </div>
@@ -423,7 +423,7 @@
 //                 <text className="font-bold text-lg leading-relaxed tracking-wide block mb-2 font-unbounded">
 //                   {award.title}
 //                 </text>
-//                 <p className="text-gray-400 font-semibold font-playfair">{award.year}</p>
+//                 <p className="text-gray-400 font-semibold font-oswald">{award.year}</p>
 //               </GlassCard>
 //             ))}
 //           </div>
@@ -440,7 +440,7 @@
 //           </Glitchtext>
           
 //           <GlassCard className="max-w-3xl mx-auto" image="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&h=600&fit=crop" showWeb={true}>
-//             <p className="text-2xl mb-12 text-gray-200 font-medium leading-relaxed font-playfair italic">
+//             <p className="text-2xl mb-12 text-gray-200 font-medium leading-relaxed font-oswald italic">
 //               Ready to build something <text className="text-blue-500 font-black">EXTRAORDINARY</text>? 
 //               Let's swing into the future together.
 //             </p>
@@ -452,10 +452,10 @@
 //               >
 //                 <Mail className="mr-4 group-hover:scale-110 transition-transform duration-300" size={24} />
 //                 <text>EMAIL ME</text>
-//                 {/* <span className="absolute bottom-2 right-2 text-playfair text-xs italic text-white/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+//                 {/* <span className="absolute bottom-2 right-2 text-oswald text-xs italic text-white/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
 //                   Thwip!
 //                 </span>
-//                 <span className="absolute top-2 left-2 text-playfair text-xs italic text-yellow-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+//                 <span className="absolute top-2 left-2 text-oswald text-xs italic text-yellow-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
 //                   Zap!
 //                 </span> */}
 //               </a>
@@ -466,10 +466,10 @@
 //               >
 //                 <Phone className="mr-4 group-hover:scale-110 transition-transform duration-300" size={24} />
 //                 <text>CALL ME</text>
-//                 {/* <span className="absolute bottom-2 right-2 text-playfair text-xs italic text-white/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+//                 {/* <span className="absolute bottom-2 right-2 text-oswald text-xs italic text-white/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
 //                   Swing!
 //                 </span>
-//                 <span className="absolute top-2 left-2 text-playfair text-xs italic text-green-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+//                 <span className="absolute top-2 left-2 text-oswald text-xs italic text-green-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
 //                   Pow!
 //                 </span> */}
 //               </a>
@@ -480,7 +480,7 @@
 //                 <MapPin size={24} className="mr-3" />
 //                 <text className="tracking-wide font-unbounded">Vellore, TAMIL NADU, INDIA</text>
 //               </div>
-//               {/* <p className="text-gray-400 font-medium tracking-wide font-playfair italic">
+//               {/* <p className="text-gray-400 font-medium tracking-wide font-oswald italic">
 //                 <text>GPA: 8.72/10 | 730+ LEETCODE PROBLEMS SOLVED</text>
 //               </p> */}
 //             </div>
@@ -490,15 +490,15 @@
 
 //       <style jsx>{`
 //         * {
-//           font-family: 'Oswald', 'Bebas Neue', 'Unbounded', 'Playfair Display', Impact, Arial Black, sans-serif !important;
+//           font-family: 'Oswald', 'Bebas Neue', 'Unbounded', 'oswald Display', Impact, Arial Black, sans-serif !important;
 //         }
 
 //         .font-unbounded {
 //           font-family: 'Unbounded', sans-serif !important;
 //         }
 
-//         .font-playfair {
-//           font-family: 'Playfair Display', cursive !important;
+//         .font-oswald {
+//           font-family: 'oswald Display', cursive !important;
 //         }
 
 //         @keyframes glitch {
@@ -606,7 +606,7 @@ const Portfolio = () => {
   const ComicPopText = ({ children, className = "" }) => (
     <div className={`relative inline-block ${className}`}>
       <span 
-        className="relative z-20 font-unbounded text-white transition-all duration-300 group-hover:scale-110 group-hover:text-yellow-400"
+        className="relative z-20 font-Shadows text-white transition-all duration-300 group-hover:scale-110 group-hover:text-yellow-400"
         style={{
           // textShadow: '2px 2px 0 #ff0040, -2px -2px 0 #0099ff',
         }}
@@ -653,13 +653,13 @@ const Portfolio = () => {
             : 'linear-gradient(45deg, #ffd700, #ffed4e)',
         }}
       />
-      <div className="absolute top-6 right-4 text-blue/50 font-playfair text-lg italic opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+      <div className="absolute top-6 right-4 text-blue/50 font-Shadows text-lg italic opacity-0 group-hover:opacity-100 transition-opacity duration-500">
         Thwip!
       </div>
-      <div className="absolute bottom-4 left-4 text-yellow-400 font-playfair text-sm italic opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+      <div className="absolute bottom-4 left-4 text-yellow-400 font-Shadows text-sm italic opacity-0 group-hover:opacity-100 transition-opacity duration-500">
         Zap!
       </div>
-      <div className="absolute bottom-2 right-8 text-pink-400 font-playfair text-sm italic opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+      <div className="absolute bottom-2 right-8 text-pink-400 font-Shadows text-sm italic opacity-0 group-hover:opacity-100 transition-opacity duration-500">
         Bam!
       </div>
       <div className="relative z-10">
@@ -887,10 +887,10 @@ const Portfolio = () => {
                     
                     {/* Enhanced Name with Multiple Effects */}
                     <div className="text-center relative">
-                      <ComicPopText className="text-4xl md:text-5xl font-black tracking-wider font-unbounded mb-2 block">
+                      <ComicPopText className="text-4xl md:text-5xl font-oswald font-black tracking-wider font-unbounded mb-2 block">
                         MADHAN R
                       </ComicPopText>
-                      <div className="text-3xl text-blue-400">
+                      <div className="text-3xl font-oswald text-blue-400">
                         AI & Data Science Engineer
                       </div>
                       
@@ -901,26 +901,26 @@ const Portfolio = () => {
                   
                   {/* Enhanced Description */}
                   <div className="relative">
-                    <p className="text-gray-300 leading-relaxed font-medium text-lg group-hover:text-white transition-colors duration-300 font-playfair text-center mb-8">
+                    <p className="text-gray-300 leading-relaxed font-medium text-lg group-hover:text-white transition-colors duration-300 font-oswald text-center mb-8">
                       An enthusiastic B.Tech student specializing in  
-                      <span className="text-red-400 font-bold">  AI and Data Science</span>, 
-                      proficient in Python and its frameworks. Successfully completed AI-driven projects. 
+                      <span className="text-red-400 font-oswald">  AI and Data Science</span>, 
+                      proficient in <span className="text-blue-400 font-oswald">Python, JavaScript and its frameworks.</span> Successfully completed AI-driven projects. 
                       Demonstrated leadership by organizing impactful tech events within the college community.
                     </p>
                     
                     {/* Stats Cards */}
                     <div className="grid grid-cols-3 gap-4 mb-8">
                       <div className="text-center bg-red-500/10 rounded-xl p-3 border border-red-500/20">
-                        <div className="text-2xl font-black text-red-400">730+</div>
-                        <div className="text-xs text-gray-400 font-playfair">Problems Solved</div>
+                        <div className="text-2xl font-black text-red-400">750+</div>
+                        <div className="text-xs text-gray-400 font-oswald">Problems Solved</div>
                       </div>
                       <div className="text-center bg-blue-500/10 rounded-xl p-3 border border-blue-500/20">
                         <div className="text-2xl font-black text-blue-400">7+</div>
-                        <div className="text-xs text-gray-400 font-playfair">Projects</div>
+                        <div className="text-xs text-gray-400 font-oswald">Projects</div>
                       </div>
                       <div className="text-center bg-green-500/10 rounded-xl p-3 border border-green-500/20">
                         <div className="text-2xl font-black text-green-400">8.72</div>
-                        <div className="text-xs text-gray-400 font-playfair">GPA</div>
+                        <div className="text-xs text-gray-400 font-oswald">GPA</div>
                       </div>
                     </div>
                   </div>
@@ -956,23 +956,9 @@ const Portfolio = () => {
             <div className="text-center lg:text-left space-y-8">
               {/* Main Hero Text */}
               <div className="space-y-6">
-                <div className="overflow-hidden">
-                  <h1 className="text-5 md:text-8xl font-black tracking-wider leading-none animate-fade-in-up">
-                    <span className="text-blue-400 ">
-                      WITH GREAT POWER
-                    </span>
-                    <span className="block text-red-400 mt-2">
-                      COMES
-                    </span>
-                    <span className="block text-white-400">
-                      GREAT RESPONSIBILITY
-                    </span>
-                  </h1>
-                </div>
-                
                 {/* Animated Subtitle */}
-                <div className="text-2xl md:text-3xl font-bold text-gray-300 font-playfair animate-fade-in-up" style={{animationDelay: '0.5s'}}>
-                  Your <span className="text-red-400"> friendly</span> neighborhood <span className="text-blue-400">Developer</span>
+                <div className="text-2xl md:text-3xl font-bold text-gray-300 font-oswald animate-fade-in-up" style={{animationDelay: '0.5s'}}>
+                  Your <span className="font-Shadows text-red-400"> friendly</span> neighborhood <span className="font-Shadows text-blue-400">Developer</span>
                 </div>
               </div>
 
@@ -981,13 +967,13 @@ const Portfolio = () => {
                 <div className="bg-gradient-to-r from-red-500/10 to-pink-500/10 p-6 rounded-2xl border border-red-500/20 transform hover:scale-105 transition-all duration-300">
                   <Code className="text-red-400 mb-3" size={32} />
                   <h3 className="font-bold text-xl mb-2 font-unbounded">Full Stack Developer</h3>
-                  <p className="text-gray-400 font-playfair">Building end-to-end solutions with modern technologies</p>
+                  <p className="text-gray-400 font-oswald">Building end-to-end solutions with modern technologies</p>
                 </div>
                 
                 <div className="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 p-6 rounded-2xl border border-blue-500/20 transform hover:scale-105 transition-all duration-300">
                   <Star className="text-blue-400 mb-3" size={32} />
                   <h3 className="font-bold text-xl mb-2 font-unbounded">AI Enthusiast</h3>
-                  <p className="text-gray-400 font-playfair">Exploring the frontiers of artificial intelligence</p>
+                  <p className="text-gray-400 font-oswald">Exploring the frontiers of artificial intelligence</p>
                 </div>
               </div>
 
@@ -1027,32 +1013,32 @@ const Portfolio = () => {
               <div className="space-y-6">
                 <div>
                   <h4 className="font-black text-xl tracking-wide font-unbounded">B.Tech (AI&DS)</h4>
-                  <p className="text-gray-300 font-semibold font-playfair">Sona College of Technology</p>
-                  <p className="text-gray-400 font-medium font-playfair italic">2022 - 2026 | GPA: 8.72/10</p>
+                  <p className="text-gray-300 font-semibold font-oswald">Sona College of Technology</p>
+                  <p className="text-gray-400 font-medium font-oswald italic">2022 - 2026 | GPA: 8.72/10</p>
                 </div>
                 <div>
                   <h4 className="font-black text-lg tracking-wide font-unbounded">HSC - 89%</h4>
-                  <p className="text-gray-300 font-playfair">Vidhyalakshmi Matric Higher Secondary School, Vellore</p>
-                  <p className="text-gray-400 font-medium font-playfair italic">2020 - 2022</p>
+                  <p className="text-gray-300 font-oswald">Vidhyalakshmi Matric Higher Secondary School, Vellore</p>
+                  <p className="text-gray-400 font-medium font-oswald italic">2020 - 2022</p>
                 </div>
                 <div>
                   <h4 className="font-black text-lg tracking-wide font-unbounded">SSLC - 99%</h4>
-                  <p className="text-gray-300 font-playfair">Ambalal Jain Saraswathi Matriculation Vidyalaya, Vellore</p>
-                  <p className="text-gray-400 font-medium font-playfair italic">2018 - 2020</p>
+                  <p className="text-gray-300 font-oswald">Ambalal Jain Saraswathi Matriculation Vidyalaya, Vellore</p>
+                  <p className="text-gray-400 font-medium font-oswald italic">2018 - 2020</p>
                 </div>
               </div>
             </GlassCard>
 
             <GlassCard glowColor="blue">
               <Code className="text-blue-500 mb-6" size={48} />
-              <ComicPopText className="text-3xl font-black mb-6 tracking-wide font-unbounded">
+              <ComicPopText className="text-3xl font-black mb-6 tracking-wide font-Shadows">
                 TECHNICAL SKILLS
               </ComicPopText>
               <div className="flex flex-wrap gap-3">
                 {skills.map((skill, index) => (
                   <span 
                     key={index}
-                    className="px-4 py-2 bg-gradient-to-r from-red-500/20 to-blue-500/20 border border-white/30 rounded-full text-xl tracking-wide hover:scale-110 hover:bg-white/10 transition-all duration-300 cursor-pointer font-playfair"
+                    className="px-4 py-2 bg-gradient-to-r from-red-500/20 to-blue-500/20 border border-white/30 rounded-full text-xl tracking-wide hover:scale-110 hover:bg-white/10 transition-all duration-300 cursor-pointer font-oswald"
                   >
                     {skill}
                   </span>
@@ -1065,7 +1051,7 @@ const Portfolio = () => {
                 {areasOfExpertise.map((expertise, index) => (
                   <span 
                     key={index}
-                    className="px-4 py-2 bg-gradient-to-r from-blue-500/20 to-purple-500/20 border border-white/30 rounded-full text-xl tracking-wide hover:scale-110 hover:bg-white/10 transition-all duration-300 cursor-pointer font-playfair"
+                    className="px-4 py-2 bg-gradient-to-r from-blue-500/20 to-purple-500/20 border border-white/30 rounded-full text-xl tracking-wide hover:scale-110 hover:bg-white/10 transition-all duration-300 cursor-pointer font-oswald"
                   >
                     {expertise}
                   </span>
@@ -1092,7 +1078,7 @@ const Portfolio = () => {
                   <div className={`inline-block px-4 py-2 rounded-full font-bold text-sm tracking-wide bg-gradient-to-r ${project.gradient} text-white mb-6 font-unbounded`}>
                     {project.tech}
                   </div>
-                  <p className="text-gray-300 leading-relaxed font-medium group-hover:text-white transition-colors duration-300 font-playfair">
+                  <p className="text-gray-300 leading-relaxed font-medium group-hover:text-white transition-colors duration-300 font-oswald">
                     {project.description}
                   </p>
                 </div>
@@ -1117,8 +1103,8 @@ const Portfolio = () => {
                 <ComicPopText className="font-bold text-lg leading-relaxed tracking-wide block mb-2 font-unbounded">
                   {award.title}
                 </ComicPopText>
-                <p className="text-gray-400 font-semibold font-playfair">{award.year}</p>
-                <p className="text-gray-300 text-sm font-playfair mt-2">{award.description}</p>
+                <p className="text-gray-400 font-semibold font-oswald">{award.year}</p>
+                <p className="text-gray-300 text-sm font-oswald mt-2">{award.description}</p>
               </GlassCard>
             ))}
           </div>
@@ -1132,7 +1118,7 @@ const Portfolio = () => {
                 <GlassCard key={index} glowColor={index % 2 === 0 ? "red" : "blue"} className="text-center">
                   <Award className="text-purple-500 mb-4 mx-auto" size={36} />
                   <ComicPopText className="font-bold text-lg tracking-wide font-unbounded">{cert.title}</ComicPopText>
-                  <p className="text-gray-400 font-playfair">{cert.issuer}</p>
+                  <p className="text-gray-400 font-oswald">{cert.issuer}</p>
                 </GlassCard>
               ))}
             </div>
@@ -1152,7 +1138,7 @@ const Portfolio = () => {
                 <ComicPopText className="text-xl font-black tracking-wide mb-4 font-unbounded">
                   {exp.role}
                 </ComicPopText>
-                <p className="text-gray-300 leading-relaxed font-medium group-hover:text-white transition-colors duration-300 font-playfair">
+                <p className="text-gray-300 leading-relaxed font-medium group-hover:text-white transition-colors duration-300 font-oswald">
                   {exp.description}
                 </p>
               </GlassCard>
@@ -1168,7 +1154,7 @@ const Portfolio = () => {
           </ComicPopText>
           
           <GlassCard className="max-w-3xl mx-auto">
-            <p className="text-2xl mb-12 text-gray-200 font-medium leading-relaxed font-playfair italic">
+            <p className="text-2xl mb-12 text-gray-200 font-medium leading-relaxed font-oswald italic">
               Ready to build something <span className="text-blue-500 font-black">EXTRAORDINARY</span>? 
               Let's swing into the future together.
             </p>
@@ -1203,16 +1189,19 @@ const Portfolio = () => {
 
       <style jsx>{`
         * {
-          font-family: 'Oswald', 'Bebas Neue', 'Unbounded', 'Playfair Display', Impact, Arial Black, sans-serif !important;
+          font-family: 'Oswald', 'Bebas Neue', 'Unbounded', 'oswald Display', 'Shadows Into Light', Impact, Arial Black, sans-serif !important;
         }
 
         .font-unbounded {
           font-family: 'Unbounded', sans-serif !important;
         }
 
-        .font-playfair {
-          font-family: 'Playfair Display', cursive !important;
+        .font-oswald {
+          font-family: 'Oswald', cursive !important;
         }
+      .font-Shadows{
+          font-family: 'Shadows Into Light', cursive !important;
+      }
 
         @keyframes webPulse {
           0% { transform: scale(1); opacity: 0.5; }
