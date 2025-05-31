@@ -1701,7 +1701,7 @@ const Portfolio = () => {
                 </div>
               </GlassCard>
             </div>
-
+             <GlassCard>
             <div className="text-center lg:text-left space-y-8">
               <div className="space-y-6">
                 <div className="text-2xl md:text-3xl font-bold text-gray-300 animate-fade-in-up" style={{animationDelay: '0.5s'}}>
@@ -1738,6 +1738,7 @@ const Portfolio = () => {
                 </button>
               </div>
             </div>
+          </GlassCard>
           </div>
         </div>
       </section>
