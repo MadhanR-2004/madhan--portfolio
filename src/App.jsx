@@ -1262,7 +1262,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Github, Mail, Code, Award, GraduationCap, Phone, MapPin, Star, Trophy, Target, Home, User, Briefcase, PhoneCall } from 'lucide-react';
 import profile from './assets/1.jpg'; // Import the profile image
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from '@vercel/analytics/react';
 
 const Portfolio = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
