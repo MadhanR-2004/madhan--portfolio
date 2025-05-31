@@ -1262,6 +1262,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Github, Mail, Code, Award, GraduationCap, Phone, MapPin, Star, Trophy, Target, Home, User, Briefcase, PhoneCall } from 'lucide-react';
 import profile from './assets/1.jpg'; // Import the profile image
+import { Analytics } from "@vercel/analytics/next"
 
 const Portfolio = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -1536,6 +1537,7 @@ const Portfolio = () => {
 
   return (
     <div className="min-h-screen bg-black text-white overflow-x-hidden">
+      <Analytics/>
       <div className="fixed inset-0 z-0">
         <div 
           className="absolute w-96 h-96 bg-red-500/10 rounded-full blur-3xl animate-pulse"
