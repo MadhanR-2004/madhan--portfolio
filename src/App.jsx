@@ -1263,6 +1263,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Github, Mail, Code, Award, GraduationCap, Phone, MapPin, Star, Trophy, Target, Home, User, Briefcase, PhoneCall } from 'lucide-react';
 import profile from './assets/1.jpg'; // Import the profile image
 import { Analytics } from '@vercel/analytics/react';
+import SpiderVerseStickers from './SpiderVerseStickers';
 
 const Portfolio = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -1566,7 +1567,7 @@ const Portfolio = () => {
           }}
         />
       </div>
-
+          <SpiderVerseStickers />
       {/* Desktop Navbar */}
       <nav className="hidden md:block fixed top-1/2 right-4 transform -translate-y-1/2 z-50">
         <div className="flex flex-col space-y-4 bg-black/50 backdrop-blur-md p-2 rounded-full border border-white/10">
