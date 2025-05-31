@@ -1362,73 +1362,37 @@ const Portfolio = () => {
     </div>
   );
 
-  const GlassCard = ({ children, className = "", glowColor = "red", onClick, cardId }) => {
-    const [isActive, setIsActive] = useState(false);
-    
-    const handleInteraction = (e) => {
-      if (onClick) {
-        onClick(e);
-      }
-      
-      // Toggle active state for visual feedback
-      setIsActive(prev => !prev);
-      
-      // Reset after animation
-      setTimeout(() => setIsActive(false), 300);
-    };
-
-    const handleTouchStart = (e) => {
-      e.preventDefault(); // Prevent default touch behavior
-      setIsActive(true);
-    };
-
-    const handleTouchEnd = (e) => {
-      e.preventDefault();
-      handleInteraction(e);
-    };
-    
-    return (
+    const GlassCard = ({ children, className = "", glowColor = "red" }) => (
+    <div 
+      className={`relative group backdrop-blur-xl bg-black/20 border border-white/10 rounded-3xl p-8 shadow-2xl hover:bg-black/30 transition-all duration-500 hover:scale-105 overflow-hidden ${className}`}
+      style={{
+        boxShadow: `0 8px 32px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1)`,
+      }}
+    >
       <div 
-        className={`relative group backdrop-blur-xl bg-black/20 border border-white/10 rounded-3xl p-8 shadow-2xl transition-all transform duration-500 overflow-hidden ${className}
-          ${onClick ? 'cursor-pointer' : ''}
-          ${isActive ? 'bg-black/30 scale-105' : ''}
-          hover:bg-black/30 hover:scale-105 active:bg-black/30 active:scale-105 touch-manipulation`}
+        className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-20 transition-opacity duration-500 blur-xl"
         style={{
-          boxShadow: `0 8px 32px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1)`,
+          background: glowColor === 'red' 
+            ? 'linear-gradient(45deg, #ff0040, #ff6b9d)' 
+            : glowColor === 'blue'
+            ? 'linear-gradient(45deg, #0099ff, #66d9ff)'
+            : 'linear-gradient(45deg, #ffd700, #ffed4e)',
         }}
-        onClick={handleInteraction}
-        onTouchStart={handleTouchStart}
-        onTouchEnd={handleTouchEnd}
-      >
-        <div 
-          className={`absolute inset-0 rounded-3xl transition-opacity duration-500 blur-xl
-            ${isActive ? 'opacity-20' : 'opacity-0 group-hover:opacity-20 group-active:opacity-20'}`}
-          style={{
-            background: glowColor === 'red' 
-              ? 'linear-gradient(45deg, #ff0040, #ff6b9d)' 
-              : glowColor === 'blue'
-              ? 'linear-gradient(45deg, #0099ff, #66d9ff)'
-              : 'linear-gradient(45deg, #ffd700, #ffed4e)',
-          }}
-        />
-        <div className={`absolute top-6 right-4 text-blue-400/70 font-Shadows text-lg italic transition-opacity duration-500
-          ${isActive ? 'opacity-100' : 'opacity-0 group-hover:opacity-100 group-active:opacity-100'}`}>
-          Thwip!
-        </div>
-        <div className={`absolute bottom-4 left-4 text-yellow-400 font-Shadows text-sm italic transition-opacity duration-500
-          ${isActive ? 'opacity-100' : 'opacity-0 group-hover:opacity-100 group-active:opacity-100'}`}>
-          Zap!
-        </div>
-        <div className={`absolute bottom-2 right-8 text-pink-400 font-Shadows text-sm italic transition-opacity duration-500
-          ${isActive ? 'opacity-100' : 'opacity-0 group-hover:opacity-100 group-active:opacity-100'}`}>
-          Bam!
-        </div>
-        <div className="relative z-10">
-          {children}
-        </div>
+      />
+      <div className="absolute top-6 right-4 text-blue/50 font-Shadows text-lg italic opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+        Thwip!
       </div>
-    );
-  };
+      <div className="absolute bottom-4 left-4 text-yellow-400 font-Shadows text-sm italic opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+        Zap!
+      </div>
+      <div className="absolute bottom-2 right-8 text-pink-400 font-Shadows text-sm italic opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+        Bam!
+      </div>
+      <div className="relative z-10">
+        {children}
+      </div>
+    </div>
+  );
 
   const projects = [
     {
@@ -1652,9 +1616,9 @@ const Portfolio = () => {
         <div className="w-full max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 items-center min-h-[80vh]">
             <div className="relative group">
-              <div className="absolute -top-10 -left-10 w-20 h-20 bg-red-500/20 rounded-full blur-xl animate-bounce" style={{animationDelay: '0s'}}></div>
-              <div className="absolute -top-5 -right-5 w-16 h-16 bg-blue-500/20 rounded-full blur-lg animate-bounce" style={{animationDelay: '1s'}}></div>
-              <div className="absolute -bottom-8 -left-8 w-12 h-12 bg-yellow-500/20 rounded-full blur-lg animate-bounce" style={{animationDelay: '2s'}}></div>
+              {/* <div className="absolute -top-10 -left-10 w-20 h-20 bg-red-500/20 rounded-full blur-xl animate-bounce" style={{animationDelay: '0s'}}></div> */}
+              {/* <div className="absolute -top-5 -right-5 w-16 h-16 bg-blue-500/20 rounded-full blur-lg animate-bounce" style={{animationDelay: '1s'}}></div> */}
+              {/* <div className="absolute -bottom-8 -left-8 w-12 h-12 bg-yellow-500/20 rounded-full blur-lg animate-bounce" style={{animationDelay: '2s'}}></div> */}
               
               <GlassCard glowColor="blue" className="group cursor-pointer transform hover:rotate-1 transition-all duration-700">
                 <div className="relative">
@@ -1672,7 +1636,7 @@ const Portfolio = () => {
                         <div className="absolute inset-0 bg-gradient-to-r from-red-500/10 to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                       </div>
                       
-                      <div className="absolute -top-2 -right-2 w-6 h-6 bg-green-500 rounded-full border-4 border-black animate-pulse shadow-lg shadow-green-500/50"></div>
+                      {/* <div className="absolute -top-2 -right-2 w-6 h-6 bg-green-500 rounded-full border-4 border-black animate-pulse shadow-lg shadow-green-500/50"></div> */}
                     </div>
                     
                     <div className="text-center relative">
