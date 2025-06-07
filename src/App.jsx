@@ -1442,7 +1442,7 @@ const Portfolio = () => {
   ];
 
   const skills = [
-    "C", "Python", "Java", "DBMS", "SQL", "NoSQL", "React", "Express", "Node", "MongoDB", 
+    "C", "Python", "Java", "JavaScript", "Ollama", "DBMS", "SQL", "NoSQL", "React", "Express", "Node", "MongoDB", 
     "OOPS", "YOLO & CNN", "UI Development", "Problem Solving", "Git Version Control",
   ];
 
